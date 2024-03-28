@@ -5,7 +5,7 @@ pipeline {
         stage ('Build Image') {
             steps {
                 script {
-                    dockerapp = docker.build("mvcardiml/ive-jenkins-aws:${env.BUILD_ID}", "-f ./src/Dockerfile ./src")
+                    dockerapp = docker.build("mvcardim/ive-jenkins-aws:${env.BUILD_ID}", "-f ./src/Dockerfile ./src")
                 }
             }
         }
