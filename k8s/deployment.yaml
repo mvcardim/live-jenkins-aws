@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: mvcardim/web-live-app:{{tag}}
+        image: mvcardim/live-jenkins-aws:v1:{{tag}}
         ports:
         - containerPort: 8080
 ---
